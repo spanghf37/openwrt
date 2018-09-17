@@ -107,14 +107,14 @@ static struct mtd_partition rb711gr100_spi_partitions[] = {
 	}, {
 	        .name        = "kernel",
 	        .offset        = 0x020000,
-	        .size        = 0x180000,
+	        .size        = 0x19f0a0, 
         }, {
 	        .name        = "rootfs",
-                .offset        = 0x1a0000,
-	        .size        = 0x180000,
+                .offset        = 0x1bf0a0,
+	        .size        = 0x401640,
 	}, {
 	        .name        = "ubifs",
-                .offset        = 0x320000,
+                .offset        = 0x58f9a0,
 	        .size        = MTDPART_SIZ_FULL
 	},
 };
