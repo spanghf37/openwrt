@@ -102,20 +102,20 @@ static struct mtd_partition rb711gr100_spi_partitions[] = {
 		.mask_flags	= MTD_WRITEABLE,
 	}, {
 		.name		= "soft_config",
-		.offset        = 0x0f000,
-	        .size        = 0x01000,
+		.offset         = 0x0f000,
+	        .size           = 0x01000,
 	}, {
-	        .name        = "kernel",
-	        .offset        = 0x020000,
-	        .size        = 0x19f0a0, 
+	        .name           = "kernel",
+	        .offset         = 0x020000,
+	        .size           = 0x19f0a0, 
         }, {
-	        .name        = "rootfs",
-                .offset        = 0x1bf0a0,
-	        .size        = 0x401640,
+	        .name           = "rootfs",
+                .offset         = 0x1bf0a0,
+	        .size           = 0x401640,
 	}, {
-	        .name        = "ubifs",
-                .offset        = 0x58f9a0,
-	        .size        = MTDPART_SIZ_FULL
+	        .name           = "ubifs",
+                .offset         = 0x58f9a0,
+	        .size           = MTDPART_SIZ_FULL
 	},
 };
 
